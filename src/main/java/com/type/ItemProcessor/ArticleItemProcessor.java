@@ -1,7 +1,8 @@
 package com.type.ItemProcessor;
 
-import org.apache.commons.logging.LogFactory;
+
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemProcessor;
 
 import com.type.dto.ArticleDto;
@@ -13,7 +14,7 @@ import com.type.unit.CommonUnit;
  *
  */
 public class ArticleItemProcessor implements ItemProcessor<ArticleDto, ArticleDto> {
-    private static final Logger log = (Logger) LogFactory.getLog(ArticleItemProcessor.class);
+    private static final Logger log = LoggerFactory.getLogger(ArticleItemProcessor.class);
 
     @Override
     public ArticleDto process(final ArticleDto item) throws Exception {
