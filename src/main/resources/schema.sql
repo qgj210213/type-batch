@@ -1,5 +1,5 @@
 --文章表Article表
-drop table db_article if exists;
+--drop table db_article if exists;
 create table db_article (
     article_name varchar (30) not null primary key,  --文章名
     article_content varchar (10000) not null,  --文章内容
